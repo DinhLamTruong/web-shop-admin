@@ -65,8 +65,8 @@ const UpdateProduct = () => {
     try {
       // Send the form data to the server
       const response = await axios.put(
-        // `https://asm-njs03-server.onrender.com/api/products/edit-product/${id}`,
-        `http://localhost:5000/api/products/edit-product/${id}`,
+        // `http://localhost:5000/api/products/edit-product/${id}`,
+        `https://asm-njs03-server.onrender.com/api/products/edit-product/${id}`,
         formData,
         {
           headers: {

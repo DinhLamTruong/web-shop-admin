@@ -53,7 +53,7 @@ function Products(props) {
       const totalPage = Math.ceil(
         parseInt(response.length) / parseInt(pagination.count)
       );
-  
+
       setTotalPage(totalPage);
     };
 
@@ -82,10 +82,11 @@ function Products(props) {
     fetchData();
   }, [pagination]);
 
+
   const handleDelete = id => {
     // eslint-disable-next-line no-restricted-globals
     if (confirm('Xác nhận xóa!')) {
-      return fetch(`http://localhost:5000/api/products/delete-product/${id}`, {
+      return fetch(`https://asm-njs03-server.onrender.com/api/products/delete-product/${id}`, {
         method: 'DELETE',
       })
         .then(res => {
