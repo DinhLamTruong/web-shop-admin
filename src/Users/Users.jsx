@@ -7,7 +7,6 @@ function Users(props) {
   useEffect(() => {
     const fetchData = async () => {
       const response = await UserAPI.getAllData();
-      console.log(response);
 
       setUsers(response);
     };
@@ -16,7 +15,7 @@ function Users(props) {
   }, []);
 
   return (
-    <div className="page-wrapper" style={{ display: "block" }}>
+    <div className="page-wrapper" style={{ display: 'block' }}>
       <div className="page-breadcrumb">
         <div className="row">
           <div className="col-7 align-self-center">
