@@ -25,7 +25,7 @@ function Chat(props) {
   // Hàm này dùng để tìm ra những user khác với admin
   useEffect(() => {
     const fetchData = async () => {
-      const result = await ChatRoomsAPI.getAllRoom(idUser);
+      const result = await ChatRoomsAPI.getAllRoom();
 
       setAllRoom(result);
     };
