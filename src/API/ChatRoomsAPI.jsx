@@ -16,8 +16,8 @@ const ChatRoomsAPI = {
     return axiosClient.put(url, body);
   },
 
-  getAllRoom: () => {
-    const url = `/api/chatrooms/all-room`;
+  getAllRoom: idUser => {
+    const url = `/api/chatrooms/all-room?id=${idUser}`;
     return axiosClient.get(url);
   },
 };

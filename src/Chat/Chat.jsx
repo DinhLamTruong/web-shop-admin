@@ -16,6 +16,8 @@ function Chat(props) {
   const [load, setLoad] = useState(false);
   const [textMessage, setTextMessage] = useState('');
 
+  const idUser = localStorage.getItem('id_user');
+
   const onChangeText = e => {
     setTextMessage(e.target.value);
   };
@@ -23,12 +25,12 @@ function Chat(props) {
   // Hàm này dùng để tìm ra những user khác với admin
   useEffect(() => {
     const fetchData = async () => {
-      const result = await ChatRoomsAPI.getAllRoom();
+      const result = await ChatRoomsAPI.getAllRoom(idUser);
 
       setAllRoom(result);
     };
     fetchData();
-  }, []);
+  }, [idUser]);
 
   // Hàm này dùng để load dữ liệu message và nó sẽ chạy lại khi state id_user2 thay đổi
   // Tức là khi admin chọn người dùng mà admin muốn chat thì state id_user2 sẽ thay đổi
@@ -80,8 +82,6 @@ function Chat(props) {
       setLoad(true);
     });
   }, []);
-
-  const idUser = localStorage.getItem('id_user');
 
   // Hàm này dùng để gửi tin nhắn cho khách hàng
   const handlerSend = async () => {
