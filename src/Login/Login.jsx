@@ -54,6 +54,7 @@ const Login = () => {
                     <i className="fa fa-user"></i>
                   </span>
                   <input
+                    id="email"
                     type="text"
                     className="form-control"
                     placeholder="Email"
