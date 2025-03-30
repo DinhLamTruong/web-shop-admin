@@ -4,7 +4,7 @@ import ChatRoomsAPI from '../API/ChatRoomsAPI';
 import './Chat.css';
 
 import io from 'socket.io-client';
-const socket = io('https://asm-njs03-server.onrender.com', {
+const socket = io('https://web-shop-server.onrender.com', {
   transports: ['websocket'],
 });
 
