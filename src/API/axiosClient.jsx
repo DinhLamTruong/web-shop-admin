@@ -6,7 +6,7 @@ import queryString from 'query-string';
 const axiosClient = axios.create({
   withCredentials: true,
   // baseURL: 'http://localhost:5000',
-  baseURL: 'https://asm-njs03-server.onrender.com',
+  baseURL: 'https://web-shop-server.onrender.com',
   headers: {
     'content-type': 'application/json',
   },
