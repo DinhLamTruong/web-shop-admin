@@ -14,7 +14,7 @@ const Login = () => {
   //   const { loading, error, dispatch } = useContext(AuthContext);
   const { dispatch } = useContext(AuthContext);
 
-  const url = 'api/auth/admin/login';
+  const url = 'https://web-shop-server.onrender.com/api/auth/admin/login';
 
   const fetchData = async () => {
     const response = await fetch(url, {
