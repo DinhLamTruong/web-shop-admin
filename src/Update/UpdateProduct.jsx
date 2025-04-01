@@ -16,7 +16,7 @@ const UpdateProduct = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`https://asm-njs03-server.onrender.com/api/products/${id}`)
+    fetch(`https://web-shop-server.onrender.com/api/products/${id}`)
       .then(res => res.json())
       .then(data =>
         setEnteredInput({
@@ -66,7 +66,7 @@ const UpdateProduct = () => {
       // Send the form data to the server
       const response = await axios.put(
         // `http://localhost:5000/api/products/edit-product/${id}`,
-        `https://asm-njs03-server.onrender.com/api/products/edit-product/${id}`,
+        `https://web-shop-server.onrender.com/api/products/edit-product/${id}`,
         formData,
         {
           headers: {
