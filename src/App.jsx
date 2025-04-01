@@ -39,15 +39,6 @@ function App() {
 
         <Routes>
           <Route
-            path="/"
-            element={
-              <ProtectRoute>
-                <Home />
-              </ProtectRoute>
-            }
-          />
-
-          <Route
             path="/chat"
             element={
               <ProtectRoute>
@@ -55,7 +46,7 @@ function App() {
               </ProtectRoute>
             }
           />
-          
+
           <Route
             path="/users"
             element={
@@ -93,12 +84,21 @@ function App() {
               </ProtectRoute>
             }
           />
-          
+
           <Route
             path="/edit/:id"
             element={
               <ProtectRoute>
                 <UpdateProduct />
+              </ProtectRoute>
+            }
+          />
+
+          <Route
+            path="/"
+            element={
+              <ProtectRoute>
+                <Home />
               </ProtectRoute>
             }
           />
