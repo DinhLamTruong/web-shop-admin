@@ -16,7 +16,7 @@ const UpdateProduct = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`https://web-shop-server.onrender.com/api/products/${id}`)
+    fetch(`web-shop-server-production.up.railway.app/api/products/${id}`)
       .then(res => res.json())
       .then(data =>
         setEnteredInput({

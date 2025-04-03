@@ -86,7 +86,7 @@ function Products(props) {
   const handleDelete = id => {
     // eslint-disable-next-line no-restricted-globals
     if (confirm('Xác nhận xóa!')) {
-      return fetch(`https://web-shop-server.onrender.com/api/products/delete-product/${id}`, {
+      return fetch(`web-shop-server-production.up.railway.app/api/products/delete-product/${id}`, {
         method: 'DELETE',
       })
         .then(res => {

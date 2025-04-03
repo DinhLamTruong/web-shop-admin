@@ -70,7 +70,8 @@ const NewProduct = () => {
     try {
       // Send the form data to the server
       const response = await axios.post(
-        'https://web-shop-server.onrender.com/api/products/add-product',
+        // 'https://web-shop-server.onrender.com/api/products/add-product',
+        'web-shop-server-production.up.railway.app/api/products/add-product',
         // 'http://localhost:5000/api/products/add-product',
         formData,
         {
