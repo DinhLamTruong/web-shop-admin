@@ -7,7 +7,7 @@ const axiosClient = axios.create({
   withCredentials: true,
   // baseURL: 'http://localhost:5000',
   // baseURL: 'https://web-shop-server.onrender.com',
-  baseURL: 'web-shop-server-production.up.railway.app',
+  baseURL: 'https://web-shop-server-production.up.railway.app',
   headers: {
     'content-type': 'application/json',
   },

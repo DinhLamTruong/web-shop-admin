@@ -15,7 +15,7 @@ const Login = () => {
   const { dispatch } = useContext(AuthContext);
 
   // const url = 'https://web-shop-server.onrender.com/api/auth/admin/login';
-  const url = 'web-shop-server-production.up.railway.app/api/auth/admin/login';
+  const url = 'https://web-shop-server-production.up.railway.app/api/auth/admin/login';
 
   const fetchData = async () => {
     const response = await fetch(url, {
