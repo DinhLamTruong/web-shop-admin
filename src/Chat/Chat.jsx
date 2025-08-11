@@ -4,7 +4,7 @@ import ChatRoomsAPI from '../API/ChatRoomsAPI';
 import './Chat.css';
 
 import { io } from 'socket.io-client';
-const socket = io('wss://web-shop-server-production.up.railway.app', {
+const socket = io('wss://web-shop-server-production-1378.up.railway.app', {
   transports: ['websocket'],
 });
 
